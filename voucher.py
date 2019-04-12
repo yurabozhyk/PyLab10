@@ -9,7 +9,6 @@ class Voucher:
         self.transport_type = transport_type
         self.passengers_quantity = passengers_quantity
         self.hotel_stars = hotel_stars
-        Voucher.voucher_amount += 1
 
     @staticmethod
     def get_static_field():

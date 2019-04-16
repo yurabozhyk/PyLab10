@@ -12,7 +12,7 @@ class Voucher:
 
     @staticmethod
     def get_static_field():
-        return Voucher.voucher_amount
+        return print(Voucher.voucher_amount)
 
     def __del__(self):
         print(self.country + " deleted")
@@ -28,7 +28,7 @@ def main():
     print(bus_voucher)
     print(plane_voucher)
     print(car_voucher)
-    print(Voucher.voucher_amount)
+    Voucher.get_static_field()
 
 if __name__ == '__main__':
     main()
